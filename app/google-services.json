@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "212596362682",
+    "project_id": "aally-alsohoob-elevators",
+    "storage_bucket": "aally-alsohoob-elevators.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212596362682:android:7456fb23e8618467aa2183",
+        "android_client_info": {
+          "package_name": "zeyad.app.aallyalsohoobelevators"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212596362682-d4elv4v0motgg139cggjd4sesap7fqjj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHZ3FjCmwqbKyAPBxzRr1TpJUWA01-ey0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212596362682-d4elv4v0motgg139cggjd4sesap7fqjj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

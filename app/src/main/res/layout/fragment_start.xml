@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zeyad.app.aallyalsohoobelevators.start.StartFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/lift_photo_3757231">
+
+        <Button
+            android:id="@+id/serviece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="163dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="154dp"
+            android:fontFamily="@font/adamina"
+            android:text="Serviece"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="163dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginEnd="154dp"
+            android:background="@android:color/system_neutral1_700"
+            android:fontFamily="@font/adamina"
+            android:text="Request"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/serviece"
+            tools:targetApi="s" />
+
+        <Button
+            android:id="@+id/types"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="163dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginEnd="154dp"
+            android:background="@android:color/system_neutral1_600"
+            android:backgroundTint="@android:color/system_neutral1_600"
+            android:fontFamily="@font/adamina"
+            android:text="Types Of Elevators"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/request"
+            tools:targetApi="s" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

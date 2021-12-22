@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment2">
+    <fragment
+        android:id="@+id/welcomeFragment2"
+        android:name="zeyad.app.aallyalsohoobelevators.welcome.welcomeFragment"
+        android:label="AALLY ALSOHOOB "
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment2_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.start.StartFragment"
+        android:label="SERVIECES"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_requestFragment"
+            app:destination="@id/requestFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_typesOfElevatorsFragment"
+            app:destination="@id/typesOfElevatorsFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_servicesFragment"
+            app:destination="@id/servicesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.services.ServicesFragment"
+        android:label="fragment_services"
+        tools:layout="@layout/fragment_services" />
+    <fragment
+        android:id="@+id/requestFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.request.RequestFragment"
+        android:label="fragment_request"
+        tools:layout="@layout/fragment_request" />
+    <fragment
+        android:id="@+id/typesOfElevatorsFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.types.TypesOfElevatorsFragment"
+        android:label="fragment_types_of_elevators" />
+</navigation>
