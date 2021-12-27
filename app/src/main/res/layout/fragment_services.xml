@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/lift_photo_3757231">
+        android:background="@drawable/backgrund_new">
 
         <Button
             android:id="@+id/on_time"

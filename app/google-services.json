@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "212596362682-vl93dn04vikjku2b6g60loqhkieogq6e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "zeyad.app.aallyalsohoobelevators",
+            "certificate_hash": "5d2be4f8f9139155b8f3cd39f7b770f7e41e234d"
+          }
+        },
+        {
           "client_id": "212596362682-d4elv4v0motgg139cggjd4sesap7fqjj.apps.googleusercontent.com",
           "client_type": 3
         }
