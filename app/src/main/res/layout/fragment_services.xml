@@ -9,58 +9,52 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/backgrund_new">
+        android:background="@drawable/color">
 
         <Button
             android:id="@+id/on_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
-            android:backgroundTint="#D31E1E1E"
+            android:layout_marginTop="208dp"
+            android:backgroundTint="#4262C3"
             android:fontFamily="@font/adamina"
-            android:text="Fix One Time"
+            android:text="Fix"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toTopOf="@+id/fixSpinner" />
+
+        <Spinner
+            android:id="@+id/fixSpinner"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="248dp"
+            android:autofillHints="creditCardExpirationMonth"
+            android:backgroundTint="#754781"
+            android:contextClickable="true"
+            android:outlineAmbientShadowColor="@color/white"
+            android:popupBackground="@android:color/holo_purple"
+            android:prompt="@style/Theme.AppCompat.DayNight"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/adamina"
-            android:text="CHOOSE"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/antic"
+            android:text="Press To Chose From The List"
             android:textColor="@color/white"
-            android:textSize="48sp"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/Weekly"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:backgroundTint="#D31E1E1E"
-            android:fontFamily="@font/adamina"
-            android:text="Weekly"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/on_time" />
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:backgroundTint="#D31E1E1E"
-            android:text="Yearly"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Weekly" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
