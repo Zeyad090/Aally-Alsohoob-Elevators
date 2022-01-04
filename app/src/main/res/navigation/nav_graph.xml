@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/welcomeFragment2">
+    app:startDestination="@id/welcomeFragment">
     <fragment
-        android:id="@+id/welcomeFragment2"
+        android:id="@+id/welcomeFragment"
         android:name="zeyad.app.aallyalsohoobelevators.welcome.welcomeFragment"
+        android:label="welcome"
         tools:layout="@layout/fragment_welcome">
         <action
-            android:id="@+id/action_welcomeFragment2_to_startFragment"
+            android:id="@+id/action_welcomeFragment_to_startFragment"
             app:destination="@id/startFragment" />
     </fragment>
     <fragment
@@ -17,14 +18,14 @@
         android:name="zeyad.app.aallyalsohoobelevators.start.StartFragment"
         tools:layout="@layout/fragment_start">
         <action
+            android:id="@+id/action_startFragment_to_servicesFragment"
+            app:destination="@id/servicesFragment" />
+        <action
             android:id="@+id/action_startFragment_to_requestFragment"
             app:destination="@id/requestFragment" />
         <action
             android:id="@+id/action_startFragment_to_typesOfElevatorsFragment"
             app:destination="@id/typesOfElevatorsFragment" />
-        <action
-            android:id="@+id/action_startFragment_to_servicesFragment"
-            app:destination="@id/servicesFragment" />
     </fragment>
     <fragment
         android:id="@+id/servicesFragment"
