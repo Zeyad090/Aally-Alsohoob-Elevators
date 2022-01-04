@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#588A97"
     tools:context="zeyad.app.aallyalsohoobelevators.start.StartFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/backgrund_new">
+        android:background="@drawable/color">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/animationView"
@@ -34,12 +35,16 @@
             android:layout_marginStart="163dp"
             android:layout_marginTop="350dp"
             android:layout_marginEnd="154dp"
+            android:backgroundTint="#4262C3"
             android:fontFamily="@font/adamina"
             android:text="Serviece"
+
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#ECD5D5"
+            tools:targetApi="s" />
 
         <Button
             android:id="@+id/request"
@@ -48,7 +53,7 @@
             android:layout_marginStart="163dp"
             android:layout_marginTop="94dp"
             android:layout_marginEnd="154dp"
-            android:background="@android:color/system_neutral1_700"
+            android:backgroundTint="#4262C3"
             android:fontFamily="@font/adamina"
             android:text="Request"
             android:textColor="@color/white"
@@ -64,8 +69,7 @@
             android:layout_marginStart="163dp"
             android:layout_marginTop="94dp"
             android:layout_marginEnd="154dp"
-            android:background="@android:color/system_neutral1_600"
-            android:backgroundTint="@android:color/system_neutral1_600"
+            android:backgroundTint="#4262C3"
             android:fontFamily="@font/adamina"
             android:text="Types Of Elevators"
             android:textColor="@color/white"
