@@ -47,18 +47,16 @@ class ServicesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-       getContract1()
+          getContract1()
 
 
-
-      //  binding.fixSpinner.adapter = ArrayAdapter(requireContext(),
-        //    android.R.layout.simple_spinner_item,viewModel.contractslist.value!!)
 
 
         binding.onTime.setOnClickListener {
             Toast.makeText(requireContext(), "your request sent successfully", Toast.LENGTH_SHORT)
                 .show()
         }
+
     }
 
 
@@ -74,8 +72,8 @@ class ServicesFragment : Fragment() {
                     Log.e("TAG", "real:${result.data!!.values}")
                     binding.fixSpinner.adapter = ArrayAdapter(requireContext(),android.R.layout.simple_spinner_item
                         ,result!!.data?.values!!.toTypedArray() )
-
                 }
+
 
             }
             .addOnFailureListener { exception ->

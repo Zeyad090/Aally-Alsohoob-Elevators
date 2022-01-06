@@ -25,7 +25,7 @@
             app:destination="@id/requestFragment" />
         <action
             android:id="@+id/action_startFragment_to_typesOfElevatorsFragment"
-            app:destination="@id/typesOfElevatorsFragment" />
+            app:destination="@id/typesOfCabinOfElevatorsFragment" />
     </fragment>
     <fragment
         android:id="@+id/servicesFragment"
@@ -36,6 +36,6 @@
         android:name="zeyad.app.aallyalsohoobelevators.request.RequestFragment"
         tools:layout="@layout/fragment_request" />
     <fragment
-        android:id="@+id/typesOfElevatorsFragment"
-        android:name="zeyad.app.aallyalsohoobelevators.types.TypesOfElevatorsFragment" />
+        android:id="@+id/typesOfCabinOfElevatorsFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.cabin.TypeOfCabinOfElevatorsFragment" />
 </navigation>

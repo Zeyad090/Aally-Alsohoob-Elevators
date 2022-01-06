@@ -9,7 +9,6 @@ import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.viewpager2.widget.ViewPager2
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.FirebaseAuthUIActivityResultContract
 import com.firebase.ui.auth.data.model.FirebaseAuthUIAuthenticationResult
@@ -19,10 +18,6 @@ import com.google.firebase.ktx.Firebase
 import zeyad.app.aallyalsohoobelevators.R
 import zeyad.app.aallyalsohoobelevators.databinding.FragmentWelcomeBinding
 //import zeyad.app.aallyalsohoobelevators.pager.SwapAdapter
-import zeyad.app.aallyalsohoobelevators.request.RequestFragment
-import zeyad.app.aallyalsohoobelevators.services.ServicesFragment
-import zeyad.app.aallyalsohoobelevators.start.StartFragment
-import zeyad.app.aallyalsohoobelevators.types.TypesOfElevatorsFragment
 import java.lang.Thread.sleep
 
 
@@ -101,6 +96,5 @@ class welcomeFragment : Fragment() {
     binding.go.setOnClickListener {
 
           findNavController().navigate(R.id.action_welcomeFragment_to_startFragment) }
-    }
 
-}
+}}

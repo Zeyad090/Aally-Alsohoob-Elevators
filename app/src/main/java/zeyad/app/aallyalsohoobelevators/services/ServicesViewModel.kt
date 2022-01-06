@@ -23,11 +23,11 @@ import java.lang.Exception
 
 
 class ServicesViewModel : ViewModel() {
-val _contractslist = MutableLiveData<String?>()
-    var contractslist: LiveData<String?> = _contractslist
-
-
-    //  var s= MutableLiveData
+//val _contractslist = MutableLiveData<String?>()
+//    var contractslist: LiveData<String?> = _contractslist
+//
+//
+//
 //    fun getContract1() {
 //        val db = Firebase.firestore
 //        val list: MutableCollection<DataFirebaseServicesContracts>
@@ -35,8 +35,9 @@ val _contractslist = MutableLiveData<String?>()
 //            .get()
 //            .addOnSuccessListener { result ->
 //                for (document in result.data!!.values) {
-//
 //                    Log.e("TAG", "real:${result.data!!.values}")
+//                    var m =   (result!!.data!!.values.toTypedArray())
+//
 //
 //                }
 //

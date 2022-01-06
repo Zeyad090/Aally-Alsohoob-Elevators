@@ -26,6 +26,7 @@ setHasOptionsMenu(true)
 
 
 
+
     //==========================================================================================//
     /**
      * use navigation from Start fragment to other fragments
@@ -39,7 +40,7 @@ setHasOptionsMenu(true)
         binding.request.setOnClickListener {
             findNavController().navigate(R.id.action_startFragment_to_requestFragment)
         }
-        binding.types.setOnClickListener {
+        binding.CabinType.setOnClickListener {
             findNavController().navigate(R.id.action_startFragment_to_typesOfElevatorsFragment)
         }
     }

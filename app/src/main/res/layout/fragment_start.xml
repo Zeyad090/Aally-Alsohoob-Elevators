@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="163dp"
-            android:layout_marginTop="350dp"
+            android:layout_marginTop="380dp"
             android:layout_marginEnd="154dp"
             android:backgroundTint="#4262C3"
             android:fontFamily="@font/adamina"
@@ -41,6 +41,7 @@
 
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.695"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:strokeColor="#ECD5D5"
@@ -51,15 +52,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="163dp"
-            android:layout_marginTop="94dp"
+            android:layout_marginTop="52dp"
             android:layout_marginEnd="154dp"
             android:backgroundTint="#4262C3"
             android:fontFamily="@font/adamina"
-            android:text="Request"
+            android:text="Installation Request"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.528"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/serviece"
+            app:layout_constraintTop_toBottomOf="@+id/types"
             tools:targetApi="s" />
 
         <Button
@@ -67,15 +69,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="163dp"
-            android:layout_marginTop="94dp"
+            android:layout_marginTop="48dp"
             android:layout_marginEnd="154dp"
             android:backgroundTint="#4262C3"
             android:fontFamily="@font/adamina"
             android:text="Types Of Elevators"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.539"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/request"
+            app:layout_constraintTop_toBottomOf="@+id/Cabin_Type"
             tools:targetApi="s" />
 
         <TextView
@@ -90,6 +93,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Cabin_Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="52dp"
+            android:backgroundTint="#4262C3"
+            android:fontFamily="@font/adamina"
+
+            android:text="Types of Cabin"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/serviece" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
