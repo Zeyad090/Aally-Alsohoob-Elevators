@@ -7,8 +7,10 @@
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="zeyad.app.aallyalsohoobelevators.welcome.welcomeFragment"
-        android:label="welcome"
         tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_userProfaileFragment2"
+            app:destination="@id/userProfaileFragment" />
         <action
             android:id="@+id/action_welcomeFragment_to_startFragment"
             app:destination="@id/startFragment" />
@@ -18,14 +20,17 @@
         android:name="zeyad.app.aallyalsohoobelevators.start.StartFragment"
         tools:layout="@layout/fragment_start">
         <action
-            android:id="@+id/action_startFragment_to_servicesFragment"
-            app:destination="@id/servicesFragment" />
+            android:id="@+id/action_startFragment_to_typesOfCabinOfElevatorsFragment"
+            app:destination="@id/typesOfCabinOfElevatorsFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_typesOfTheElevatorsFragment"
+            app:destination="@id/typesOfTheElevatorsFragment" />
         <action
             android:id="@+id/action_startFragment_to_requestFragment"
             app:destination="@id/requestFragment" />
         <action
-            android:id="@+id/action_startFragment_to_typesOfElevatorsFragment"
-            app:destination="@id/typesOfCabinOfElevatorsFragment" />
+            android:id="@+id/action_startFragment_to_servicesFragment"
+            app:destination="@id/servicesFragment" />
     </fragment>
     <fragment
         android:id="@+id/servicesFragment"
@@ -38,4 +43,13 @@
     <fragment
         android:id="@+id/typesOfCabinOfElevatorsFragment"
         android:name="zeyad.app.aallyalsohoobelevators.cabin.TypeOfCabinOfElevatorsFragment" />
+    <fragment
+        android:id="@+id/typesOfTheElevatorsFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.types.TypesOfTheElevatorsFragment"
+        android:label="fragment_types_of_the_elevators"
+        tools:layout="@layout/fragment_types_of_the_elevators" />
+    <fragment
+        android:id="@+id/userProfaileFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.users.UserProfaileFragment"
+        android:label="UserProfaileFragment" />
 </navigation>

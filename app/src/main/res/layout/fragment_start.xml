@@ -10,104 +10,120 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/color">
+        android:background="#ECF3F2">
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/animationView"
-            android:layout_width="335dp"
-            android:layout_height="226dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.589"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.173"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/machine"
-            app:lottie_url="REPLACE_JSON_URL"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/serviece"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="163dp"
-            android:layout_marginTop="380dp"
-            android:layout_marginEnd="154dp"
-            android:backgroundTint="#4262C3"
-            android:fontFamily="@font/adamina"
-            android:text="Serviece"
-
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.695"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:strokeColor="#ECD5D5"
-            tools:targetApi="s" />
-
-        <Button
-            android:id="@+id/request"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="163dp"
-            android:layout_marginTop="52dp"
-            android:layout_marginEnd="154dp"
-            android:backgroundTint="#4262C3"
-            android:fontFamily="@font/adamina"
-            android:text="Installation Request"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.528"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/types"
-            tools:targetApi="s" />
-
-        <Button
-            android:id="@+id/types"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="163dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="154dp"
-            android:backgroundTint="#4262C3"
-            android:fontFamily="@font/adamina"
-            android:text="Types Of Elevators"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.539"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Cabin_Type"
-            tools:targetApi="s" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/Types_of_elevators"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
+            android:alpha="0.5"
             android:fontFamily="@font/adamina"
             android:text="Choose from the list"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/Cabin_Type"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/wait"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="1dp">
 
-            android:layout_marginTop="52dp"
-            android:backgroundTint="#4262C3"
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.1"
+                android:src="@drawable/my_logo0"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="75dp" />
+
+            <Button
+                android:id="@+id/servies"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/adamina"
+                android:text="SERVICES"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView3"
+                app:strokeColor="#302E2E"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/cabin_types"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/adamina"
+                android:text="TYPE OF CABIN"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/request"
+                app:strokeColor="#302E2E"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/elevators_types"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/adamina"
+                android:text="TYPES OF ELEVATORS"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cabin_types"
+                app:strokeColor="#302E2E"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/request"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/adamina"
+                android:text="REQUEST"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/servies"
+                app:strokeColor="#302E2E"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="287dp"
+            android:layout_height="102dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0.5"
             android:fontFamily="@font/adamina"
-
-            android:text="Types of Cabin"
-            android:textColor="@color/white"
+            android:text="Choose from these options the right service for you and add it to your reqwest page"
+            android:textColor="@color/black"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/serviece" />
+            app:layout_constraintTop_toBottomOf="@+id/Types_of_elevators" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

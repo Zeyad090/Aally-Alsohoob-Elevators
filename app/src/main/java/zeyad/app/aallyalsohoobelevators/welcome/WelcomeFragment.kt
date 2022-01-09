@@ -52,11 +52,11 @@ class welcomeFragment : Fragment() {
             // Successfully signed in
             Log.i(TAG,"Successfully singed ${FirebaseAuth.getInstance().currentUser}")
 
-            binding.signIn.text ="sign out"
+//            binding.signIn.text ="sign out"
 
         } else {
               Log.i(TAG,"Sign in unsuccessful ${response?.error?.errorCode}")
-            binding.signIn.text= "sign in"
+//            binding.signIn.text= "sign in"
         }
 
     }
@@ -66,7 +66,7 @@ class welcomeFragment : Fragment() {
           .signOut(requireContext())
             .addOnCompleteListener {
 
-           binding.signIn.text ="sign in"
+//           binding.signIn.text ="sign in"
                 Firebase.auth.signOut()
           }
     }
@@ -84,17 +84,14 @@ class welcomeFragment : Fragment() {
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-    super.onViewCreated(view, savedInstanceState)
+        super.onViewCreated(view, savedInstanceState)
 
-    // =====================For lunch Sign in=========================//
-    binding.signIn.setOnClickListener {
-        sleep(1000)
+        // =====================For lunch Sign in=========================//
+    binding.start.setOnClickListener {
         signInLauncher.launch(signInIntent)
+        findNavController().navigate(R.id.action_welcomeFragment_to_startFragment)
     }
 //===================================================================//
 
-    binding.go.setOnClickListener {
 
-          findNavController().navigate(R.id.action_welcomeFragment_to_startFragment) }
-
-}}
+    }}

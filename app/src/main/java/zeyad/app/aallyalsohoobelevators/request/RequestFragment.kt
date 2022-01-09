@@ -37,9 +37,9 @@ class RequestFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.send.setOnClickListener {
-            Toast.makeText(requireContext(),"your request sent successfully",Toast.LENGTH_SHORT).show()
-        }
+//        binding..setOnClickListener {
+//            Toast.makeText(requireContext(),"your request sent successfully",Toast.LENGTH_SHORT).show()
+//        }
     }
 
 

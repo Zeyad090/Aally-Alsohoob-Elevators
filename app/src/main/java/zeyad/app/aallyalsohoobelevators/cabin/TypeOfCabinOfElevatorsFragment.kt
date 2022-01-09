@@ -5,28 +5,30 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
-import zeyad.app.aallyalsohoobelevators.databinding.ActivityMainBinding.inflate
-import zeyad.app.aallyalsohoobelevators.databinding.FragmentTypeOfElevatorsBinding
+import zeyad.app.aallyalsohoobelevators.R
+import zeyad.app.aallyalsohoobelevators.databinding.FragmentTypeOfCabinOfElevatorsBinding
 
-
+enum class Cabin{LOADING, ERROR, DONE}
 class TypeOfCabinOfElevatorsFragment : Fragment() {
-
-    lateinit var binding: FragmentTypeOfElevatorsBinding
+    private val viewModel: CabinViewModel by viewModels()
+    lateinit var binding: FragmentTypeOfCabinOfElevatorsBinding
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Inflate the layout for this fragment
-        binding = FragmentTypeOfElevatorsBinding.inflate(layoutInflater)
+        binding = FragmentTypeOfCabinOfElevatorsBinding.inflate(layoutInflater)
         binding.recyclePhoto.apply {
             layoutManager = LinearLayoutManager(requireContext())
-            binding.recyclePhoto.setItemViewCacheSize(20)
-            binding.recyclePhoto.setHasFixedSize(true)
+
         }
 
         return (binding.root)
@@ -34,26 +36,23 @@ class TypeOfCabinOfElevatorsFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         super.onViewCreated(view, savedInstanceState)
 
-        getTypesOfElevators()
-
+       getCabinOfElevators()
     }
-
     var list :MutableList<CabinOfTypeOfElevatorsModel> = mutableListOf()
 
-
-    private fun getTypesOfElevators() {
+    private fun getCabinOfElevators() {
         var counter = 0
         FirebaseFirestore.getInstance().collection("Cabin photos").document("Cabin")
             .get()
             .addOnSuccessListener { documents ->
                 for (dcouments in documents.data?.values!!) {
-                    var a = documents.data?.values?.toMutableList()
-                   list.add(CabinOfTypeOfElevatorsModel(a?.get(counter++).toString()))
-
+                    var cabin = documents.data?.values?.toMutableList()
+                    list.add(CabinOfTypeOfElevatorsModel(cabin?.get(counter++).toString()))
                 }
-                binding.recyclePhoto.adapter = TypeOfCabinOfElevatorsAdapter(requireContext(),list)
+                binding.recyclePhoto.adapter = TypeOfCabinOfElevatorsAdapter(requireContext(), list)
             }
             .addOnFailureListener {
                 Toast.makeText(requireContext(), "error is found", Toast.LENGTH_SHORT)
@@ -61,4 +60,23 @@ class TypeOfCabinOfElevatorsFragment : Fragment() {
             }
 
     }
+//    fun bindstatus(statusImageView: ImageView,
+//    status:Cabin){
+//        binding.statusImage.setImageResource(R.drawable.loading_img)
+//
+//        when(status){
+//            Cabin.LOADING -> {
+//                statusImageView.visibility = View.VISIBLE
+//                statusImageView.setImageResource(R.drawable.loading_img)
+//            }
+//
+//        Cabin.ERROR -> {
+//            statusImageView.visibility = View.VISIBLE
+//            statusImageView.setImageResource(R.drawable.ic_connection_error)
+//        }
+//        Cabin.DONE -> {
+//            statusImageView.visibility = View.GONE
+//        }
+//    }
+//   }
 }

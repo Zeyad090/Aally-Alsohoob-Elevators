@@ -34,15 +34,18 @@ setHasOptionsMenu(true)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-     binding.serviece.setOnClickListener {
+     binding.servies.setOnClickListener {
          findNavController().navigate(R.id.action_startFragment_to_servicesFragment)
      }
         binding.request.setOnClickListener {
             findNavController().navigate(R.id.action_startFragment_to_requestFragment)
         }
-        binding.CabinType.setOnClickListener {
-            findNavController().navigate(R.id.action_startFragment_to_typesOfElevatorsFragment)
+        binding.cabinTypes.setOnClickListener {
+            findNavController().navigate(R.id.action_startFragment_to_typesOfCabinOfElevatorsFragment)
         }
+       binding.elevatorsTypes.setOnClickListener {
+           findNavController().navigate(R.id.action_startFragment_to_typesOfTheElevatorsFragment)
+       }
     }
 //==============================================================================================//
 }

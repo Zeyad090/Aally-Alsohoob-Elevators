@@ -52,7 +52,7 @@ class ServicesFragment : Fragment() {
 
 
 
-        binding.onTime.setOnClickListener {
+        binding.serviceConfirmation.setOnClickListener {
             Toast.makeText(requireContext(), "your request sent successfully", Toast.LENGTH_SHORT)
                 .show()
         }
