@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.google.rpc.Help
 import zeyad.app.aallyalsohoobelevators.R
 import zeyad.app.aallyalsohoobelevators.databinding.FragmentRequestBinding
@@ -37,6 +38,10 @@ class RequestFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.back.setOnClickListener {
+            findNavController().navigate(R.id.action_requestFragment_to_startFragment)
+        }
+
 //        binding..setOnClickListener {
 //            Toast.makeText(requireContext(),"your request sent successfully",Toast.LENGTH_SHORT).show()
 //        }

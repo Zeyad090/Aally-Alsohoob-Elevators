@@ -11,11 +11,12 @@ import zeyad.app.aallyalsohoobelevators.request.RequestFragment
 import zeyad.app.aallyalsohoobelevators.services.ServicesFragment
 import zeyad.app.aallyalsohoobelevators.start.StartFragment
 import zeyad.app.aallyalsohoobelevators.cabin.TypeOfCabinOfElevatorsFragment
-import zeyad.app.aallyalsohoobelevators.welcome.welcomeFragment
+import zeyad.app.aallyalsohoobelevators.users.UserProfileFragment
+import zeyad.app.aallyalsohoobelevators.welcome.WelcomeFragment
 
 class MainActivity : AppCompatActivity() {
     //============ create variable inhered from ViewPager2=====================//
-    lateinit var viewPager: ViewPager2
+  //  lateinit var viewPager: ViewPager2
 
     //=========================================================================//
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,25 +36,28 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
 
         //=======================For view Pager2 =====================
-        viewPager = findViewById(R.id.view_swap)
-        val fragments: ArrayList<Fragment> = arrayListOf(
-            welcomeFragment(),
-            StartFragment(),
-            ServicesFragment(),
-            RequestFragment(),
-            TypeOfCabinOfElevatorsFragment()
-        )
-        val adapter = SwapAdapter(fragments, this)
-        viewPager.adapter = adapter
+//        viewPager = findViewById(R.id.view_swap)
+//        val fragments: ArrayList<Fragment> = arrayListOf(
+//            WelcomeFragment(),
+//            UserProfileFragment(),
+//            StartFragment(),
+//            ServicesFragment(),
+//            RequestFragment(),
+//            TypeOfCabinOfElevatorsFragment()
+//        )
+//        val adapter = SwapAdapter(fragments, this)
+//        viewPager.adapter = adapter
+
+//  navController.navigate(R.id.action_welcomeFragment_)
     }
 
-    override fun onBackPressed() {
-        if (viewPager.currentItem == 0) {
-            super.onBackPressed()
-        } else {
-            viewPager.currentItem = viewPager.currentItem - 1
-        }
-    }
+//    override fun onBackPressed() {
+//        if (viewPager.currentItem == 0) {
+//            super.onBackPressed()
+//        } else {
+//            viewPager.currentItem = viewPager.currentItem - 1
+//        }
+//    }
 
 
 

@@ -1,6 +1,5 @@
 package zeyad.app.aallyalsohoobelevators.welcome
 
-
 import android.app.Activity.RESULT_OK
 import android.content.ContentValues.TAG
 import android.os.Bundle
@@ -17,60 +16,20 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import zeyad.app.aallyalsohoobelevators.R
 import zeyad.app.aallyalsohoobelevators.databinding.FragmentWelcomeBinding
+import zeyad.app.aallyalsohoobelevators.users.UserProfileFragmentDirections
 //import zeyad.app.aallyalsohoobelevators.pager.SwapAdapter
 import java.lang.Thread.sleep
 
 
-class welcomeFragment : Fragment() {
+class WelcomeFragment : Fragment() {
 
   lateinit var binding: FragmentWelcomeBinding
 
-    private val signInLauncher = registerForActivityResult(
-        FirebaseAuthUIActivityResultContract()
-    ) { res ->
-        this.onSignInResult(res) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
     }
-    // ===========build email - phone number - Google sign in================
-    val providers = arrayListOf(
-        AuthUI.IdpConfig.EmailBuilder().build(),
-       AuthUI.IdpConfig.PhoneBuilder().build(),
-       AuthUI.IdpConfig.GoogleBuilder().build())
-    // Create and launch sign-in intent
-    val signInIntent = AuthUI.getInstance()
-        .createSignInIntentBuilder()
-        .setAvailableProviders(providers)
-        .build()
-
-
-//===================== sign in function=========================================//
-    private fun onSignInResult(result: FirebaseAuthUIAuthenticationResult) {
-        val response = result.idpResponse
-        if (result.resultCode == RESULT_OK) {
-            // Successfully signed in
-            Log.i(TAG,"Successfully singed ${FirebaseAuth.getInstance().currentUser}")
-
-//            binding.signIn.text ="sign out"
-
-        } else {
-              Log.i(TAG,"Sign in unsuccessful ${response?.error?.errorCode}")
-//            binding.signIn.text= "sign in"
-        }
-
-    }
-    //========================= sign out function===============================//
-    private fun signOut(){
-       AuthUI.getInstance()
-          .signOut(requireContext())
-            .addOnCompleteListener {
-
-//           binding.signIn.text ="sign in"
-                Firebase.auth.signOut()
-          }
-    }
-//==============================================================================//
 
 
     override fun onCreateView(
@@ -86,12 +45,10 @@ class welcomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // =====================For lunch Sign in=========================//
-    binding.start.setOnClickListener {
-        signInLauncher.launch(signInIntent)
-        findNavController().navigate(R.id.action_welcomeFragment_to_startFragment)
-    }
-//===================================================================//
+  binding.start.setOnClickListener {
 
+      findNavController().navigate(R.id.action_welcomeFragment_to_signInFragment)
+  }
+//===================================================================//
 
     }}

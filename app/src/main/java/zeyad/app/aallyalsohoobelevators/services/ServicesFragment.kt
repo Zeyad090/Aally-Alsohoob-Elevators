@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -49,12 +50,12 @@ class ServicesFragment : Fragment() {
 
           getContract1()
 
-
-
-
         binding.serviceConfirmation.setOnClickListener {
             Toast.makeText(requireContext(), "your request sent successfully", Toast.LENGTH_SHORT)
                 .show()
+        }
+        binding.backTo.setOnClickListener {
+            findNavController().navigate(R.id.action_servicesFragment_to_startFragment)
         }
 
     }

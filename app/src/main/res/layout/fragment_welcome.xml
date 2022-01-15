@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".welcome.welcomeFragment"
-    app:motionDebug="SHOW_PATH">
-
+    tools:context=".welcome.WelcomeFragment"
+    >
     <androidx.constraintlayout.widget.ConstraintLayout
 
         android:layout_width="match_parent"
@@ -47,13 +46,12 @@
                 app:lottie_loop="true"
                 app:lottie_rawRes="@raw/loading"
                 app:lottie_url="REPLACE_JSON_URL"
-                tools:ignore="MissingConstraints" />
+                />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="366dp"
                 android:layout_height="266dp"
-                android:alpha="0.5"
                 android:fontFamily="@font/adamina"
                 android:text="Welcome to Aally Alsohb for elevators. Here you can request maintenance for your elevator, install a new elevator and many more. Sign in to get the service"
                 android:textColor="@color/black"
@@ -72,15 +70,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
-                android:alpha="0.5"
                 android:fontFamily="@font/adamina"
-                android:text="Get Start"
-                android:textColor="@color/black"
+                android:text="@string/get_start"
+                android:textColor="#757575"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView6"
                 app:strokeColor="#302E2E"
-                tools:ignore="MissingConstraints" />
+                />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -89,7 +86,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:alpha="0.5"
             android:fontFamily="@font/adamina"
             android:text="WELCOME "
             android:textColor="@color/black"

@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".services.ServicesFragment">
-
+>
+<data>
+    <variable
+        name="viewModel"
+        type="zeyad.app.aallyalsohoobelevators.services.ServicesViewModel" />
+</data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#E5FCFB">
-
+        android:background="#E5FCFB"
+        tools:context=".services.ServicesFragment">
+        <ImageView
+            android:id="@+id/back__to"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icons8_back_100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView4"
@@ -24,7 +37,8 @@
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="409dp"
@@ -43,10 +57,14 @@
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:alpha="0.1"
+                android:alpha="0.1
+"
                 android:src="@drawable/my_logo0"
-                tools:layout_editor_absoluteX="84dp"
-                tools:layout_editor_absoluteY="115dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
 
             <Button
                 android:id="@+id/service_confirmation"
@@ -54,23 +72,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="130dp"
-                android:alpha="0.5"
                 android:fontFamily="@font/adamina"
                 android:text="SERVICE CONFIRMATION "
-                android:textColor="@color/black"
+                android:textColor="#757575"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.467"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/fixSpinner"
                 app:strokeColor="#302E2E"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="HardcodedText,MissingConstraints" />
 
             <Spinner
                 android:id="@+id/fixSpinner"
                 android:layout_width="375dp"
-                android:layout_height="37dp"
+                android:layout_height="48dp"
                 android:layout_marginTop="100dp"
-                android:alpha="0.5"
+
                 android:autofillHints="creditCardExpirationMonth"
                 android:backgroundTint="@color/white"
                 android:dropDownWidth="match_parent"
@@ -92,5 +109,5 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</LinearLayout>
+</layout>
 

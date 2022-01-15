@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
 import zeyad.app.aallyalsohoobelevators.R
@@ -38,7 +39,9 @@ class TypeOfCabinOfElevatorsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         super.onViewCreated(view, savedInstanceState)
-
+binding.backTo.setOnClickListener {
+    findNavController().navigate(R.id.action_typesOfCabinOfElevatorsFragment_to_startFragment)
+}
        getCabinOfElevators()
     }
     var list :MutableList<CabinOfTypeOfElevatorsModel> = mutableListOf()

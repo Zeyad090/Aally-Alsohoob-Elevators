@@ -3,6 +3,9 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.firebase.ui.auth.AuthUI
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import zeyad.app.aallyalsohoobelevators.R
 import zeyad.app.aallyalsohoobelevators.databinding.FragmentStartBinding
 
@@ -46,6 +49,21 @@ setHasOptionsMenu(true)
        binding.elevatorsTypes.setOnClickListener {
            findNavController().navigate(R.id.action_startFragment_to_typesOfTheElevatorsFragment)
        }
+        binding.signOut.setOnClickListener {
+         signOut()
+
+        }
+
     }
 //==============================================================================================//
+
+    fun signOut(){
+        AuthUI.getInstance()
+            .signOut(requireContext())
+            .addOnCompleteListener {
+                Firebase.auth.signOut()
+                findNavController().navigate(R.id.action_startFragment_to_signInFragment)
+            }
+
+    }
 }

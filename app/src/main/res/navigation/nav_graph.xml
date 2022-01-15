@@ -3,17 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/welcomeFragment">
+    app:startDestination="@id/splashScreenFragment">
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="zeyad.app.aallyalsohoobelevators.welcome.welcomeFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.welcome.WelcomeFragment"
         tools:layout="@layout/fragment_welcome">
+
+
         <action
-            android:id="@+id/action_welcomeFragment_to_userProfaileFragment2"
-            app:destination="@id/userProfaileFragment" />
-        <action
-            android:id="@+id/action_welcomeFragment_to_startFragment"
-            app:destination="@id/startFragment" />
+            android:id="@+id/action_welcomeFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
     </fragment>
     <fragment
         android:id="@+id/startFragment"
@@ -21,35 +24,125 @@
         tools:layout="@layout/fragment_start">
         <action
             android:id="@+id/action_startFragment_to_typesOfCabinOfElevatorsFragment"
-            app:destination="@id/typesOfCabinOfElevatorsFragment" />
+            app:destination="@id/typesOfCabinOfElevatorsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
         <action
             android:id="@+id/action_startFragment_to_typesOfTheElevatorsFragment"
-            app:destination="@id/typesOfTheElevatorsFragment" />
+            app:destination="@id/typesOfTheElevatorsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
         <action
             android:id="@+id/action_startFragment_to_requestFragment"
-            app:destination="@id/requestFragment" />
+            app:destination="@id/requestFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
         <action
             android:id="@+id/action_startFragment_to_servicesFragment"
-            app:destination="@id/servicesFragment" />
+            app:destination="@id/servicesFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_startFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
     </fragment>
     <fragment
         android:id="@+id/servicesFragment"
         android:name="zeyad.app.aallyalsohoobelevators.services.ServicesFragment"
-        tools:layout="@layout/fragment_services" />
+        tools:layout="@layout/fragment_services" >
+        <action
+            android:id="@+id/action_servicesFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
     <fragment
         android:id="@+id/requestFragment"
         android:name="zeyad.app.aallyalsohoobelevators.request.RequestFragment"
-        tools:layout="@layout/fragment_request" />
+        tools:layout="@layout/fragment_request" >
+        <action
+            android:id="@+id/action_requestFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
     <fragment
         android:id="@+id/typesOfCabinOfElevatorsFragment"
-        android:name="zeyad.app.aallyalsohoobelevators.cabin.TypeOfCabinOfElevatorsFragment" />
+        android:name="zeyad.app.aallyalsohoobelevators.cabin.TypeOfCabinOfElevatorsFragment" >
+        <action
+            android:id="@+id/action_typesOfCabinOfElevatorsFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
     <fragment
         android:id="@+id/typesOfTheElevatorsFragment"
         android:name="zeyad.app.aallyalsohoobelevators.types.TypesOfTheElevatorsFragment"
         android:label="fragment_types_of_the_elevators"
-        tools:layout="@layout/fragment_types_of_the_elevators" />
+        tools:layout="@layout/fragment_types_of_the_elevators" >
+        <action
+            android:id="@+id/action_typesOfTheElevatorsFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
     <fragment
-        android:id="@+id/userProfaileFragment"
-        android:name="zeyad.app.aallyalsohoobelevators.users.UserProfaileFragment"
-        android:label="UserProfaileFragment" />
+        android:id="@+id/userProfileFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.users.UserProfileFragment"
+        tools:layout="@layout/fragment_user_profile">
+        <action
+            android:id="@+id/action_userProfileFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.users.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_signInFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_signInFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.users.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/from_right" />
+    </fragment>
 </navigation>
