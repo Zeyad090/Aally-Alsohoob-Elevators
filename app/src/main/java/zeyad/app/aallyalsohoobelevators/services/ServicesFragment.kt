@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -47,18 +48,16 @@ class ServicesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-       getContract1()
+          getContract1()
 
-
-
-      //  binding.fixSpinner.adapter = ArrayAdapter(requireContext(),
-        //    android.R.layout.simple_spinner_item,viewModel.contractslist.value!!)
-
-
-        binding.onTime.setOnClickListener {
+        binding.serviceConfirmation.setOnClickListener {
             Toast.makeText(requireContext(), "your request sent successfully", Toast.LENGTH_SHORT)
                 .show()
         }
+        binding.backTo.setOnClickListener {
+            findNavController().navigate(R.id.action_servicesFragment_to_startFragment)
+        }
+
     }
 
 
@@ -74,8 +73,8 @@ class ServicesFragment : Fragment() {
                     Log.e("TAG", "real:${result.data!!.values}")
                     binding.fixSpinner.adapter = ArrayAdapter(requireContext(),android.R.layout.simple_spinner_item
                         ,result!!.data?.values!!.toTypedArray() )
-
                 }
+
 
             }
             .addOnFailureListener { exception ->

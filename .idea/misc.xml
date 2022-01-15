@@ -3,15 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/drawable/ic_connection_error.xml" value="0.28229166666666666" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/drawable/loading_img.xml" value="0.2703125" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout-v31/fragment_start.xml" value="0.18115942028985507" />
-        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/activity_main.xml" value="0.15625" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_register.xml" value="0.176" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_request.xml" value="0.25" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_services.xml" value="0.15625" />
-        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_start.xml" value="0.15625" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_sign_in.xml" value="0.4" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_start.xml" value="0.264" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_type_of_cabin_of_elevators.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_type_of_elevators.xml" value="0.1094224924012158" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_types_of_elevators.xml" value="0.18115942028985507" />
-        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_welcome.xml" value="0.2" />
-        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/list_items.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_types_of_the_elevators.xml" value="0.2" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_user_profaile.xml" value="0.2" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_user_profile.xml" value="0.16296296296296298" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_welcome.xml" value="0.264" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/list_items.xml" value="0.12" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/list_type_items.xml" value="0.264" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.13125" />
       </map>
     </option>
   </component>
@@ -20,5 +35,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
   </component>
 </project>

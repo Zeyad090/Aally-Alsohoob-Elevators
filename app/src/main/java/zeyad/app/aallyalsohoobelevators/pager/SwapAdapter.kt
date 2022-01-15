@@ -1,14 +1,13 @@
 package zeyad.app.aallyalsohoobelevators.pager
 
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import zeyad.app.aallyalsohoobelevators.welcome.welcomeFragment
+import android.app.Activity
+import zeyad.app.aallyalsohoobelevators.MainActivity
 
 
-class SwapAdapter(val items: ArrayList<Fragment>, activity :AppCompatActivity)
-    : FragmentStateAdapter(activity) {
+class SwapAdapter(val items: ArrayList<Fragment>,Activity: MainActivity)
+    : FragmentStateAdapter(Activity) {
     override fun getItemCount(): Int {
 return items.size
     }
