@@ -1,4 +1,5 @@
 package zeyad.app.aallyalsohoobelevators.start
+
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -11,23 +12,21 @@ import zeyad.app.aallyalsohoobelevators.databinding.FragmentStartBinding
 
 
 class StartFragment : Fragment() {
-   lateinit var binding: FragmentStartBinding
+    lateinit var binding: FragmentStartBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-setHasOptionsMenu(true)
+        setHasOptionsMenu(true)
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View? {
-        binding = FragmentStartBinding.inflate(inflater,container,false)
+        binding = FragmentStartBinding.inflate(inflater, container, false)
         return binding.root
 
     }
-
-
 
 
     //==========================================================================================//
@@ -37,27 +36,27 @@ setHasOptionsMenu(true)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-     binding.servies.setOnClickListener {
-         findNavController().navigate(R.id.action_startFragment_to_servicesFragment)
-     }
+        binding.servies.setOnClickListener {
+            findNavController().navigate(R.id.action_startFragment_to_servicesFragment)
+        }
         binding.request.setOnClickListener {
             findNavController().navigate(R.id.action_startFragment_to_requestFragment)
         }
         binding.cabinTypes.setOnClickListener {
             findNavController().navigate(R.id.action_startFragment_to_typesOfCabinOfElevatorsFragment)
         }
-       binding.elevatorsTypes.setOnClickListener {
-           findNavController().navigate(R.id.action_startFragment_to_typesOfTheElevatorsFragment)
-       }
+        binding.elevatorsTypes.setOnClickListener {
+            findNavController().navigate(R.id.action_startFragment_to_typesOfTheElevatorsFragment)
+        }
         binding.signOut.setOnClickListener {
-         signOut()
+            signOut()
 
         }
 
     }
 //==============================================================================================//
 
-    fun signOut(){
+    fun signOut() {
         AuthUI.getInstance()
             .signOut(requireContext())
             .addOnCompleteListener {

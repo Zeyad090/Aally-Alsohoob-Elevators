@@ -48,14 +48,12 @@
 
             <Button
                 android:id="@+id/servies"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="199dp"
+                android:layout_height="54dp"
                 android:layout_marginTop="70dp"
-
                 android:fontFamily="@font/adamina"
                 android:text="SERVICES"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageView3"
@@ -64,14 +62,12 @@
 
             <Button
                 android:id="@+id/cabin_types"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="199dp"
+                android:layout_height="54dp"
                 android:layout_marginTop="70dp"
-
                 android:fontFamily="@font/adamina"
                 android:text="TYPE OF CABIN"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/request"
@@ -80,15 +76,14 @@
 
             <Button
                 android:id="@+id/elevators_types"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
-
+                android:layout_width="239dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="48dp"
                 android:fontFamily="@font/adamina"
                 android:text="TYPES OF ELEVATORS"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cabin_types"
                 app:strokeColor="#302E2E"
@@ -96,14 +91,12 @@
 
             <Button
                 android:id="@+id/request"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="199dp"
+                android:layout_height="54dp"
                 android:layout_marginTop="70dp"
-
                 android:fontFamily="@font/adamina"
                 android:text="REQUEST"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/servies"
