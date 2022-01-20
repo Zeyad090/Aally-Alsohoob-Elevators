@@ -49,6 +49,11 @@
             app:destination="@id/signInFragment"
             app:enterAnim="@anim/from_right"
             app:exitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_startFragment_to_seeMyRequestsFragment"
+            app:destination="@id/seeMyRequestsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
     </fragment>
     <fragment
         android:id="@+id/servicesFragment"
@@ -69,6 +74,19 @@
             app:destination="@id/startFragment"
             app:enterAnim="@anim/from_right"
             app:exitAnim="@anim/to_left" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_requestFragment_to_myRequestsFragment"
+            app:destination="@id/myRequestsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_requestFragment_to_typesOfCabinOfElevatorsFragment"
+            app:destination="@id/typesOfCabinOfElevatorsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
     </fragment>
     <fragment
         android:id="@+id/typesOfCabinOfElevatorsFragment"
@@ -78,6 +96,11 @@
             app:destination="@id/startFragment"
             app:enterAnim="@anim/from_right"
             app:exitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_typesOfCabinOfElevatorsFragment_to_requestFragment"
+            app:destination="@id/requestFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
     </fragment>
     <fragment
         android:id="@+id/typesOfTheElevatorsFragment"
@@ -89,6 +112,9 @@
             app:destination="@id/startFragment"
             app:enterAnim="@anim/from_right"
             app:exitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_typesOfTheElevatorsFragment_to_myRequestsFragment"
+            app:destination="@id/myRequestsFragment" />
     </fragment>
     <fragment
         android:id="@+id/userProfileFragment"
@@ -144,5 +170,42 @@
             app:destination="@id/welcomeFragment"
             app:enterAnim="@anim/from_left"
             app:exitAnim="@anim/from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/myRequestsFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.MyRequestsFragment"
+        android:label="fragment_my_requests"
+        tools:layout="@layout/fragment_my_requests" >
+        <action
+            android:id="@+id/action_myRequestsFragment_to_requestFragment"
+            app:destination="@id/requestFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <argument
+            android:name="types"
+            app:argType="string" />
+        <argument
+            android:name="floor"
+            app:argType="string" />
+        <argument
+            android:name="machine"
+            app:argType="string" />
+        <argument
+            android:name="country"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeMyRequestsFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.SeeMyRequestsFragment"
+        android:label="fragment_see_my_requests"
+        tools:layout="@layout/fragment_see_my_requests" >
+        <action
+            android:id="@+id/action_seeMyRequestsFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
     </fragment>
 </navigation>

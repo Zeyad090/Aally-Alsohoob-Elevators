@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">أعالي السحب</string>
+    <string name="Submit" translatable="false">إرسال</string>
+    <string name="Update" translatable="false">تحديث</string>
+    <string name="email2" translatable="false">الإيميل</string>
+    <string name="password">الرقم السري</string>
+    <string name="phone_nmuber" translatable="false">رقم الجوال</string>
+    <string name="sign_up" translatable="false">تسجيل جديد</string>
+    <string name="register_page" translatable="false">صفحة التسجيل</string>
+    <string name="to_your_cabin_press_here" translatable="false">لإختيار الكابينة اضغط هنا</string>
+    <string name="chose_from_options_below" translatable="false">"إختار من القائمة "</string>
+    <string name="read_data" translatable="false">عرض الطلبات</string>
+    <string name="press" translatable="false">اضغط للإختيار من القائمة</string>
+    <string name="services">خدمات</string>
+    <string name="service">تأكيد الخدمة وإرسالها</string>
+    <string name="email">الأيميل</string>
+    <string name="password2">الرقم السري</string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="you_don_t_have_account">هل ليس لديك حساب؟</string>
+    <string name="sign_up_here">سجل من هنا</string>
+    <string name="phone_number">رقم الجوال</string>
+    <string name="google">قوقل</string>
+    <string name="chose">اختر من القائمة</string>
+    <string name="welcome">اهلا وسهلا</string>
+    <string name="hi">مرحبا بكم في  أعالي السحب للمصاعد. هنا يمكنك طلب صيانة المصعد الخاص بك وتركيب مصعد جديد وغير ذلك الكثير. تسجيل الدخول للحصول على الخدمة</string>
+    <string name="CHOSE">إختر من هذه القائمة</string>
+    <string name="SERVICES1">خدمات</string>
+    <string name="REQUEST1">طلب مصعد جديد</string>
+    <string name="type">انواع الكبائن</string>
+    <string name="elevators">انواع المصاعد</string>
+    <string name="my">طلباتي</string>
+    <string name="get_start">إبدا</string>
+    <string name="aally_alsohob_elevators">أعالي السحب للمصاعد</string>
+    <string name="types_of_the_elevator">نوع المصعد</string>
+    <string name="country_made">بلد المنشأ</string>
+    <string name="machine_wight">حمل الماكينة</string>
+    <string name="floor">الأدوار</string>
+    <string name="add_to_my_requests">إضافة الى الطلبات</string>
+    <string name="room">غرفة ماكينة</string>
+    <string name="your_last_request">طلباتك الأخيرة</string>
+
+
+</resources>
