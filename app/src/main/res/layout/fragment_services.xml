@@ -67,10 +67,11 @@
 
 
                 tools:ignore="ContentDescription,ImageContrastCheck" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/menu_services"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:hint="@string/services"
@@ -83,8 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:width="1dp"
-                    android:inputType="none"
-                     />
+                    android:inputType="none" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

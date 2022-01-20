@@ -39,6 +39,7 @@
     <string name="add_to_my_requests">إضافة الى الطلبات</string>
     <string name="room">غرفة ماكينة</string>
     <string name="your_last_request">طلباتك الأخيرة</string>
+    <string name="dele">حذف</string>
 
 
 </resources>

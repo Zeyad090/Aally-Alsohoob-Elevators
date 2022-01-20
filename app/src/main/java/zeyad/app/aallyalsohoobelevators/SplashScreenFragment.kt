@@ -21,7 +21,8 @@ class SplashScreenFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        // Inflate the layout for this fragment
+
+        //=====================for splash screen====================//
      val splash = inflater.inflate(R.layout.fragment_splash_screen, container, false)
 
         Handler(Looper.myLooper()!!).postDelayed({

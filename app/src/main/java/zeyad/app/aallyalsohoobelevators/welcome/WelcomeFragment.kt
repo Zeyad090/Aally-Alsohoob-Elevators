@@ -44,7 +44,7 @@ class WelcomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+//===================go from welcome fragment to sign in fragment==================//
   binding.start.setOnClickListener {
 
       findNavController().navigate(R.id.action_welcomeFragment_to_signInFragment)

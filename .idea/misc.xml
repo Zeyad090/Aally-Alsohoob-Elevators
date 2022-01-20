@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ZEYAD/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_list_item_1.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/drawable/ic_connection_error.xml" value="0.28229166666666666" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
@@ -27,6 +28,7 @@
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_user_profile.xml" value="0.16296296296296298" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/fragment_welcome.xml" value="0.264" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/list_items.xml" value="0.144" />
+        <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/list_items_my_requests.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/layout/list_type_items.xml" value="0.264" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ZEYAD/Downloads/AallyAlsohoobElevators/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />

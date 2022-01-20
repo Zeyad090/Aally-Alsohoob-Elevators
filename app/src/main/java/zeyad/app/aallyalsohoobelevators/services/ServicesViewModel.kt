@@ -25,32 +25,5 @@ import java.lang.Exception
 class ServicesViewModel : ViewModel() {
 
 
-    val _contractslist = MutableLiveData<ArrayList<String>>()
-    var contractslist: MutableLiveData<ArrayList<String>> = _contractslist
 
-    init {
-        getContract1()
-    }
-
-    fun getContract1() {
-        val db = Firebase.firestore
-        val list: MutableCollection<DataFirebaseServicesContracts>
-        db.collection("Contracts").document("Contracts")
-            .get()
-            .addOnSuccessListener { result ->
-                // var alldata=mutalis
-
-
-                for (document in result.data!!.values) {
-                    // vaer at= docto.toobject
-                    //alldata.add(at)
-
-
-                }
-                //      _contractslist.value = alldata
-            }
-            .addOnFailureListener { exception ->
-                Log.w("TAG", "Error getting documents.", exception)
-            }
-    }
 }
