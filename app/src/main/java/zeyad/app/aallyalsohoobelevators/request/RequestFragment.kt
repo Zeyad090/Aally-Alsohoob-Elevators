@@ -24,10 +24,13 @@ import zeyad.app.aallyalsohoobelevators.services.ServicesViewModel
 
 
 class RequestFragment : Fragment() {
+
     private val typesLiveData = MutableLiveData<String>()
     private val floorLiveData = MutableLiveData<String>()
     private val machineLiveData = MutableLiveData<String>()
-    private val countryLiveData =  MutableLiveData<String>()
+    private val countryLiveData = MutableLiveData<String>()
+
+    //===================MediatorLiveData is combain tow or more LiveData together=================//
 
     private val isValidLiveData = MediatorLiveData<Boolean>().apply {
         this.value = false
@@ -37,7 +40,7 @@ class RequestFragment : Fragment() {
             val machine = machineLiveData.value
             val country = countryLiveData.value
 
-            this.value = vaiddatain(types,floor,machine,country)
+            this.value = vaiddatain(types, floor, machine, country)
         }
         addSource(floorLiveData) { floor ->
             val types = typesLiveData.value
@@ -45,7 +48,7 @@ class RequestFragment : Fragment() {
             val country = countryLiveData.value
 
 
-            this.value = vaiddatain(types,floor,machine,country)
+            this.value = vaiddatain(types, floor, machine, country)
         }
         addSource(machineLiveData) { machine ->
             val floor = floorLiveData.value
@@ -53,7 +56,7 @@ class RequestFragment : Fragment() {
             val country = countryLiveData.value
 
 
-            this.value = vaiddatain(types,floor,machine,country)
+            this.value = vaiddatain(types, floor, machine, country)
         }
 
         addSource(countryLiveData) { country ->
@@ -62,20 +65,22 @@ class RequestFragment : Fragment() {
             val machine = machineLiveData.value
 
 
-            this.value = vaiddatain(types,floor,machine,country)
+            this.value = vaiddatain(types, floor, machine, country)
         }
 
 
     }
 
 
-
     private val viewModel: RequestViewModel by viewModels()
     lateinit var binding: FragmentRequestBinding
+
+    //===========for send image to athor fragment ==========//
     lateinit var imageUrl: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //=========== argument to pass image=================//
         arguments?.let {
             imageUrl = it.getString("image", "")
         }
@@ -95,6 +100,8 @@ class RequestFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //=====================for make sure the text have all conditions what we add it in function=========//
         binding.menu4.editText?.doOnTextChanged { text, _, _, _ ->
             typesLiveData.value = text?.toString()
         }
@@ -108,11 +115,11 @@ class RequestFragment : Fragment() {
             floorLiveData.value = text?.toString()
         }
 
-        isValidLiveData.observe(viewLifecycleOwner){ isValid ->
+        isValidLiveData.observe(viewLifecycleOwner) { isValid ->
             binding.requestButton.isEnabled = isValid
 
         }
-
+//=================================================================================================//
         binding.back.setOnClickListener {
             findNavController().navigate(R.id.action_requestFragment_to_startFragment)
         }
@@ -121,7 +128,7 @@ class RequestFragment : Fragment() {
             findNavController().navigate(R.id.action_requestFragment_to_typesOfCabinOfElevatorsFragment)
         }
 
-
+//============this for pass arguments to athor fragment===========================//
         binding.requestButton.setOnClickListener {
             findNavController().navigate(R.id.action_requestFragment_to_myRequestsFragment,
                 Bundle().apply {
@@ -134,6 +141,7 @@ class RequestFragment : Fragment() {
 
 
         }
+        //===============to hold the image to pass it in author fragment====================//
         Glide.with(this.requireContext())
             .load(imageUrl)
             .into(binding.requestPhotoOfCabin)
@@ -153,22 +161,32 @@ class RequestFragment : Fragment() {
         binding.machineWight.setAdapter(arrayAdapterMachine)
 
         //======================================================================================//
+        //=============================dropdown menu for country made==========================//
 
         val countryMade = resources.getStringArray(R.array.Country_Made)
         val arrayAdapterCountry =
             ArrayAdapter(requireContext(), android.R.layout.simple_dropdown_item_1line, countryMade)
         binding.countryMade.setAdapter(arrayAdapterCountry)
+//=====================================================================================================//
 
+        //=============================dropdown menu for types of elevators==========================//
 
         val typesOfTheElevators = resources.getStringArray(R.array.Types_of_Elevator)
         val arrayAdapterTypes = ArrayAdapter(requireContext(),
             android.R.layout.simple_dropdown_item_1line,
             typesOfTheElevators)
         binding.TypesOfElevatorsMenu.setAdapter(arrayAdapterTypes)
+
+        //======================================================================================//
     }
 
-
-    private fun vaiddatain(types:String?,floor:String?,machine:String?,country:String?): Boolean {
+//==============================make sure the input text is not null & not blank==================//
+    private fun vaiddatain(
+        types: String?,
+        floor: String?,
+        machine: String?,
+        country: String?,
+    ): Boolean {
         val isValidTypes = types != null && types.isNotEmpty()
         val isValidFloor = floor != null && floor.isNotEmpty()
         val isValidMachine = machine != null && machine.isNotEmpty()

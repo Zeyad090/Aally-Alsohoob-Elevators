@@ -35,6 +35,9 @@ class StartFragment : Fragment() {
      */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.readMyData.setOnClickListener {
+            findNavController().navigate(R.id.action_startFragment_to_seeMyRequestsFragment)
+        }
 
         binding.servies.setOnClickListener {
             findNavController().navigate(R.id.action_startFragment_to_servicesFragment)

@@ -49,6 +49,11 @@
             app:destination="@id/signInFragment"
             app:enterAnim="@anim/from_right"
             app:exitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_startFragment_to_seeMyRequestsFragment"
+            app:destination="@id/seeMyRequestsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
     </fragment>
     <fragment
         android:id="@+id/servicesFragment"
@@ -191,5 +196,16 @@
         <argument
             android:name="country"
             app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeMyRequestsFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.SeeMyRequestsFragment"
+        android:label="fragment_see_my_requests"
+        tools:layout="@layout/fragment_see_my_requests" >
+        <action
+            android:id="@+id/action_seeMyRequestsFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
     </fragment>
 </navigation>

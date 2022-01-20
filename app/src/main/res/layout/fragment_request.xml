@@ -43,7 +43,7 @@
                 android:layout_marginTop="15dp"
                 android:background="@color/teal_200"
                 android:fontFamily="@font/adamina"
-                android:text="Add to my Requests"
+                android:text="@string/add_to_my_requests"
                 android:textColor="#757575"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="55dp"
                 android:layout_marginTop="15dp"
-                android:hint="Floor"
+                android:hint="@string/floor"
 
                 app:layout_constraintEnd_toEndOf="@+id/Types_of_elevatorsMenu"
                 app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +91,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:hint="Machine Wight"
+                android:hint="@string/machine_wight"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/menu">
@@ -111,7 +111,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:hint="Country Made"
+                android:hint="@string/country_made"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/menu2">
@@ -131,7 +131,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:hint="Types of The Elevator"
+                android:hint="@string/types_of_the_elevator"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView9">
@@ -206,7 +206,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginBottom="33dp"
                 android:fontFamily="@font/antic"
-                android:text="choce From options below"
+                android:text="@string/chose_from_options_below"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/menu4"
@@ -221,10 +221,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:fontFamily="@font/antic"
-                android:text="to your cabin press here"
+                android:text="@string/to_your_cabin_press_here"
                 android:textColor="#2196F3"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                tools:ignore="HardcodedText" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

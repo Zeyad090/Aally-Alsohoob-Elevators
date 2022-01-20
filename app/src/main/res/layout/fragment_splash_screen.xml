@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
             android:fontFamily="@font/antic"
-            android:text="Aally Alsohob Elevators"
+            android:text="@string/aally_alsohob_elevators"
             android:textColor="#322E2E"
             android:textSize="34sp"
             android:textStyle="bold"

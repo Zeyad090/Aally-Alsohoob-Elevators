@@ -2,6 +2,42 @@
     <string name="app_name">Aally Alsohoob Elevators</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Submit">Submit</string>
+    <string name="Update">Update</string>
+    <string name="email2">Email</string>
+    <string name="password">password</string>
+    <string name="phone_nmuber">phone Nmuber</string>
+    <string name="sign_up">sign up</string>
+    <string name="register_page">REGISTER PAGE</string>
+    <string name="to_your_cabin_press_here">to your cabin press here</string>
+    <string name="chose_from_options_below">chose From options below</string>
+    <string name="read_data">Read Data</string>
+    <string name="press">Press To Chose From The List</string>
+    <string name="services">services</string>
+    <string name="service">SERVICE CONFIRMATION</string>
+    <string name="email">Email</string>
+    <string name="password2">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="you_don_t_have_account">you don\'t have account?</string>
+    <string name="sign_up_here">sign up here</string>
+    <string name="phone_number">phone number</string>
+    <string name="google">Google</string>
+    <string name="chose">Choose from the list</string>
+    <string name="welcome">WELCOME</string>
+    <string name="hi">Welcome to Aally Alsohb for elevators. Here you can request maintenance for your elevator, install a new elevator and many more. Sign in to get the service</string>
+    <string name="CHOSE">CHOSE FROM THOSE OPTION</string>
+    <string name="SERVICES1">SERVICES</string>
+    <string name="REQUEST1">REQUEST</string>
+    <string name="type">TYPE OF CABIN</string>
+    <string name="elevators">TYPES OF ELEVATORS</string>
+    <string name="my">MY REQUEST</string>
+    <string name="get_start">get start</string>
+    <string name="aally_alsohob_elevators">Aally Alsohob Elevators</string>
+    <string name="types_of_the_elevator">Types of The Elevator</string>
+    <string name="country_made">Country Made</string>
+    <string name="machine_wight">Machine Wight</string>
+    <string name="floor">Floor</string>
+    <string name="add_to_my_requests">Add to my Requests</string>
     <string-array name="Floor">
         <item>2</item>
         <item>3</item>
@@ -58,4 +94,6 @@
 
 
     </string-array>
+    <string name="room">Room</string>
+    <string name="your_last_request">YOUR LAST REQUEST</string>
 </resources>
