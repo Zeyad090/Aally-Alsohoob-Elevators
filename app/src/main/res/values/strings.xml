@@ -96,4 +96,5 @@
     </string-array>
     <string name="room">Room</string>
     <string name="your_last_request">YOUR LAST REQUEST</string>
+    <string name="dele">Delete</string>
 </resources>

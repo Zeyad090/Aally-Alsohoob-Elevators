@@ -173,7 +173,7 @@
     </fragment>
     <fragment
         android:id="@+id/myRequestsFragment"
-        android:name="zeyad.app.aallyalsohoobelevators.MyRequestsFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.myrequests.MyRequestsFragment"
         android:label="fragment_my_requests"
         tools:layout="@layout/fragment_my_requests" >
         <action
@@ -199,7 +199,7 @@
     </fragment>
     <fragment
         android:id="@+id/seeMyRequestsFragment"
-        android:name="zeyad.app.aallyalsohoobelevators.SeeMyRequestsFragment"
+        android:name="zeyad.app.aallyalsohoobelevators.myrequests.SeeMyRequestsFragment"
         android:label="fragment_see_my_requests"
         tools:layout="@layout/fragment_see_my_requests" >
         <action

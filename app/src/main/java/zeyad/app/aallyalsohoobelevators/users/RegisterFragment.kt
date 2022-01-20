@@ -64,6 +64,7 @@ class RegisterFragment : Fragment() {
         binding.backTo.setOnClickListener {
             findNavController().navigate(R.id.action_registerFragment_to_signInFragment)
         }
+//=====================for chek input is matches conditions in the function validateRegisterform==============//
 
         binding.registerEmailInputLayout2.editText?.doOnTextChanged { text, _, _, _ ->
             emailRegisterLiveData.value = text?.toString()

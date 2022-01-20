@@ -35,22 +35,28 @@ class StartFragment : Fragment() {
      */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //================to go to see my requests fragment from start fragment===================//
         binding.readMyData.setOnClickListener {
             findNavController().navigate(R.id.action_startFragment_to_seeMyRequestsFragment)
         }
-
+//===========================go to services fragment from start fragment ==========================//
         binding.servies.setOnClickListener {
             findNavController().navigate(R.id.action_startFragment_to_servicesFragment)
         }
+        //========================go to request fragment from start fragment=======================//
         binding.request.setOnClickListener {
             findNavController().navigate(R.id.action_startFragment_to_requestFragment)
         }
+        //======================go to types Of Cabin Of elevators fragment from start fragment=====//
         binding.cabinTypes.setOnClickListener {
             findNavController().navigate(R.id.action_startFragment_to_typesOfCabinOfElevatorsFragment)
         }
+        //=============go to types Of the elevators fragment from start fragment
         binding.elevatorsTypes.setOnClickListener {
             findNavController().navigate(R.id.action_startFragment_to_typesOfTheElevatorsFragment)
         }
+        //====================for sign out from email and phone number==============================//
         binding.signOut.setOnClickListener {
             signOut()
 
@@ -58,7 +64,7 @@ class StartFragment : Fragment() {
 
     }
 //==============================================================================================//
-
+//=================================function for sign out========================================//
     fun signOut() {
         AuthUI.getInstance()
             .signOut(requireContext())

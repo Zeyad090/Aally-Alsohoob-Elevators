@@ -30,7 +30,7 @@ class RequestFragment : Fragment() {
     private val machineLiveData = MutableLiveData<String>()
     private val countryLiveData = MutableLiveData<String>()
 
-    //===================MediatorLiveData is combain tow or more LiveData together=================//
+    //===================MediatorLiveData is combine tow or more LiveData together=================//
 
     private val isValidLiveData = MediatorLiveData<Boolean>().apply {
         this.value = false
