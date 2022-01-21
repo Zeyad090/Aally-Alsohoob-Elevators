@@ -23,7 +23,7 @@
     <string name="google">قوقل</string>
     <string name="chose">اختر من القائمة</string>
     <string name="welcome">اهلا وسهلا</string>
-    <string name="hi">مرحبا بكم في  أعالي السحب للمصاعد. هنا يمكنك طلب صيانة المصعد الخاص بك وتركيب مصعد جديد وغير ذلك الكثير. تسجيل الدخول للحصول على الخدمة</string>
+    <string name="hi">مرحبا بكم في  أعالي السحب للمصاعد. هنا يمكنك طلب صيانة المصعد الخاص بك وتركيب مصعد جديد وغير ذلك الكثير. سجل الدخول للحصول على الخدمة</string>
     <string name="CHOSE">إختر من هذه القائمة</string>
     <string name="SERVICES1">خدمات</string>
     <string name="REQUEST1">طلب مصعد جديد</string>
@@ -40,6 +40,8 @@
     <string name="room">غرفة ماكينة</string>
     <string name="your_last_request">طلباتك الأخيرة</string>
     <string name="dele">حذف</string>
+    <string name="register">" تسجيل جديد"</string>
+    <string name="food">مصعد طعام</string>
 
 
 </resources>
