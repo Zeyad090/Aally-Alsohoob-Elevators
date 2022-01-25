@@ -35,13 +35,16 @@
     <string name="types_of_the_elevator">نوع المصعد</string>
     <string name="country_made">بلد المنشأ</string>
     <string name="machine_wight">حمل الماكينة</string>
-    <string name="floor">الأدوار</string>
     <string name="add_to_my_requests">إضافة الى الطلبات</string>
     <string name="room">غرفة ماكينة</string>
     <string name="your_last_request">طلباتك الأخيرة</string>
     <string name="dele">حذف</string>
     <string name="register">" تسجيل جديد"</string>
     <string name="food">مصعد طعام</string>
+    <string name="Toast">تم إرسال طلبك بنجاح</string>
+    <string name="Toast2">تم مسح الطلب بنجاح</string>
+    <string name="Panoramic">بانوراما</string>
+    <string name="floor">عدد الأدوار</string>
 
 
 </resources>

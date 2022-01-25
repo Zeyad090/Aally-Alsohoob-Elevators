@@ -1,6 +1,7 @@
 package zeyad.app.aallyalsohoobelevators.cabin
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.media.Image
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -23,6 +24,7 @@ class TypeOfCabinOfElevatorsFragment : Fragment() {
 
     private val viewModel: CabinViewModel by viewModels()
     lateinit var binding: FragmentTypeOfCabinOfElevatorsBinding
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,7 +54,12 @@ class TypeOfCabinOfElevatorsFragment : Fragment() {
         }
         //========function get cabin from fireStore====================//
         getCabinOfElevators()
-    }
+
+
+        }
+
+
+
 
     //=============================list for cabin photo to use it to add cabin inside this list==============//
     var list: MutableList<CabinOfTypeOfElevatorsModel> = mutableListOf()
