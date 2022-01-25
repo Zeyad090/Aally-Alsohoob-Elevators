@@ -11,11 +11,11 @@ Zeyad Altwalah
 * [Resources](#Resources)
 * [Contact](#contact)
 ## Introduction
-> This app is about Elevators. Services , Request now Elevators and more.
+> This app is about Elevators. Services , request now elevators and more.
 ## Features
-- Sing in for user.
-- Chose Services (contarct, now elevators).
-- Seve last Request and delete it.
+- Sign in for user.
+- Chose services (contract, now elevators).
+- Save last request and delete it.
 
 ## Technologies Used
 - Live Data (MediatorLiveData)
