@@ -37,6 +37,7 @@ binding = FragmentTypesOfTheElevatorsBinding.inflate(layoutInflater)
         binding.back.setOnClickListener {
             findNavController().navigate(R.id.action_typesOfTheElevatorsFragment_to_startFragment)
         }
+
         //===============call function onViewCreated ============================//
      getTypesOfElevators()
     }

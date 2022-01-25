@@ -37,6 +37,8 @@
     <string name="machine_wight">Machine Wight</string>
     <string name="floor">Floor</string>
     <string name="add_to_my_requests">Add to my Requests</string>
+    <string name="Toast">Your request is send successfully </string>
+    <string name="Toast2">Your request is delete successfully</string>
     <string-array name="Floor">
         <item>2</item>
         <item>3</item>
@@ -84,7 +86,7 @@
     </string-array>
 
     <string-array name="Types_of_Elevator">
-        <item>>Panoramic</item>
+        <item>Panoramic</item>
         <item>Food</item>
         <item>Shipping</item>
         <item>Hospital</item>
@@ -98,4 +100,6 @@
     <string name="dele">Delete</string>
     <string name="register">register page</string>
     <string name="food">Food</string>
+    <string name="Panoramic">Panoramic</string>
+
 </resources>
